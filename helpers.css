@@ -1,0 +1,41 @@
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Special case where flex direction goes to column */
+.center-column {
+  flex-direction: column;
+}
+
+.top {
+  align-items: flex-start;
+}
+.right {
+  justify-content: flex-end;
+}
+.bottom {
+  align-items: flex-end;
+}
+.left {
+  justify-content: flex-start;
+}
+
+.single-spaced,
+.single-spaced * {
+  line-height: 1;
+}
+
+
+
+/* Hide something if your on a mobile device */
+@media (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+}
